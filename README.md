@@ -61,14 +61,17 @@ If you do not want to save `graph` and `model`, setting param `save_model=False`
 * `command.txt`: shell command.
 
 ##Source Policy
+
 Source policies contain pre-trained opponent policies. For example, in pac-man, the pac-man agent is the opponent, the policy is a pre-trained PPO; in predator-prey, the blue circle agents are pre-trained using PPO. Using test mode via `-t`和`load_model`can reload the model to render
 
 ##Configuration
+
 The config files act as defaults for an algorithm or environment. 
 
 They are all located in `config`.
 
 ####Operating parameters
+
 Take the above example: 
 * `-a multi_ppo`: choose an algorithm.
 * `-c ppo_conf`: choose corresponding algorithm configuration.
@@ -80,6 +83,7 @@ Take the above example:
 * `adv_load_model=True adv_load_model_path=source/pacman/original/0/model`: load source policy.
 * `adv_use_option, good_use_option`: use option, by setting `True`, `False` as default. Learning ppo, shppo and maddpg, setting `False`, otherwise setting `True` as needed.
 ####Core parameters
+
 Default:
 * `option_layer_1=128, option_layer_2=128`
 * `learning_rate_r=0.0003`
