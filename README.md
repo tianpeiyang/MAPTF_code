@@ -82,6 +82,7 @@ Take the above example:
 * `num_adversaries=1`: as needed.
 * `adv_load_model=True adv_load_model_path=source/pacman/original/0/model`: load source policy.
 * `adv_use_option, good_use_option`: use option, by setting `True`, `False` as default. Learning ppo, shppo and maddpg, setting `False`, otherwise setting `True` as needed.
+
 ####Core parameters
 
 Default:
@@ -95,6 +96,7 @@ Default:
 * `e_greedy_increment=0.001`
 * `learning_rate_o=0.00001, learning_rate_t=0.00001`
 * `xi=0.005`
+
 ####Some experiences setting in paper
 ```
 #ppo+sro, game type=pacman, game environment=mediumClassic
