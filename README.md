@@ -65,7 +65,7 @@ If you do not want to save `graph` and `model`, setting param `save_model=False`
 
 ## Source Policy
 
-Source policies contain pre-trained opponent policies. For example, in pac-man, the pac-man agent is the opponent, the policy is a pre-trained PPO; in predator-prey, the blue circle agents are pre-trained using PPO. Using test mode via `-t`和`load_model`can reload the model to render
+Source policies contain pre-trained opponent policies. For example, in pac-man, the pac-man agent is the opponent, the policy is a pre-trained PPO; in predator-prey, the blue circle agents are pre-trained using PPO. Using test mode via `-t` `load_model`can reload the model to render
 
 ## Configuration
 
