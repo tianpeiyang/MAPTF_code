@@ -1,0 +1,13 @@
+num_adversaries: 1 #pacman
+timeout: 30
+game_name: "trickyClassic"
+textGraphics: False
+quietGraphics: False
+zoom: 1.0
+fixRandomSeed: False
+recordActions: False
+replay: None
+frameTime: 0.1
+catchExceptions: False
+continuous_action: False
+obs_sort: False

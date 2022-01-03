@@ -1,0 +1,10 @@
+game_name: "simple_spread"
+continuous_action: False
+reward_normalize: False
+benchmark: False
+action_clip: 1
+num_adversaries: 0
+num_good: 0
+obs_sort: False
+reward_func: "reward"
+restrict_move: False

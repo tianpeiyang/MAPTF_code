@@ -1,0 +1,76 @@
+# ppo
+learning_rate_a: 0.0003
+learning_rate_c: 0.0003
+batch_size: 32
+clip_value: 0.2
+reward_decay: 0.99
+c2: 0.001
+stochastic: True
+load_model: False
+load_model_path: ''
+adv_policy: "ppo"
+good_policy: "ppo"
+reward_normalize: False
+done_reward: 1.0
+
+# option
+option_batch_size: 32
+option_clip_value: 10.0
+other_option_update: True
+c1: 0.005
+c3: 0.0005
+epi_train_times: 1
+memory_size: 100000
+e_greedy: 0.95
+replace_target_iter: 1000
+e_greedy_increment: 0.001
+start_greedy: 0.0
+learning_step: 1000
+learning_rate_o: 0.00001
+learning_rate_t: 0.00001
+xi: 0.005
+adv_use_option: False
+good_use_option: False
+adv_load_model: False
+adv_load_model_path: ''
+good_load_model: False
+good_load_model_path: ''
+grad_clip: 10
+
+#sro
+learning_rate_r: 0.0003
+embedding_dim: 32
+option_embedding_layer: 64
+recon_loss_coef: 0.1
+
+# transfer_agent
+trans_agent_start_epi: 0
+
+#run
+reward_memory: 100
+save_per_episodes: 2000
+use_gpu_id: '0'
+use_gpu: False
+output_graph: True
+save_model: True
+summary_output_times: 10
+reload_model: False
+reload_model_path: ''
+
+# network
+policy: 'policy'
+old_policy: 'old_policy'
+n_layer_a_1: 64
+n_layer_a_2: 64
+n_layer_c_1: 64
+n_layer_c_2: 64
+option_layer_1: 128
+option_layer_2: 128
+
+# output
+SAVE_PATH: "model"
+graph_path: "graph"
+reward_output: "output"
+output_filename: "out"
+log: "log"
+

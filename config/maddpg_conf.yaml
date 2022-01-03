@@ -1,0 +1,69 @@
+reward_decay: 0.99
+output_graph: True
+save_model: True
+summary_output_times: 10
+regular: 0.005
+learning_rate_a: 0.01
+learning_rate_c: 0.01
+ENTROPY_BETA: 0.0005
+USE_CPU_COUNT: True
+load_model: False
+load_model_path: ''
+batch_size: 1024
+display: False
+
+#run
+reward_memory: 100
+save_per_episodes: 2000
+num_adversaries: 0
+good_policy: 'maddpg'
+adv_policy: 'maddpg'
+adv_use_option: False
+good_use_option: False
+adv_load_model: False
+adv_load_model_path: ''
+good_load_model: False
+good_load_model_path: ''
+use_gpu_id: '0'
+use_gpu: False
+other_option_update: True
+
+#option
+learning_rate_o: 0.0003
+learning_rate_t: 0.0003
+option_layer_1: 128
+option_layer_2: 128
+e_greedy: 0.95
+e_greedy_increment: 0.005
+start_greedy: 0.0
+memory_size: 1000000
+option_batch_size: 16
+xi: 0.005
+option_clip_value: 10.0
+is_soft_max_action: True
+replace_target_iter: 1000
+learning_step: 1000
+c3: 0.0005
+c1: 1.0
+
+# SF
+embedding_dim: 32
+option_embedding_layer: 64
+recon_loss_coef: 0.1
+learning_rate_r: 0.0003
+clip_value: 0.2
+
+#DVM
+distillation_frequent: 1000
+distillation_interation: 2048
+
+# network
+n_layer_a_1: 128
+
+# output
+SAVE_PATH: "model"
+graph_path: "graph"
+reward_output: "output"
+output_filename: "out"
+log: "log"
+benchmark_dir: "benchmark"
