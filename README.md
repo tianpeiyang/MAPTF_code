@@ -1,4 +1,7 @@
 # MAPTF
+
+Source code for paper: An Efficient Transfer Learning Framework for Multiagent Reinforcement Learning
+
  * [MAPTF code](#MAPTF code)
  * [Installation](#Installation)
  * [Run an experiment](#Run an experiment)
@@ -125,6 +128,8 @@ option_batch_size=128
 option_layer_1=32 option_layer_2=32 
 c1=0.1 
 ```
+
+MADDPG code follows: https://github.com/openai/maddpg
 
 ##In BibTeX format:
 
