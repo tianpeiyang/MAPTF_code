@@ -40,7 +40,7 @@ pip install -r requirements.txt
 
 ## Running Example
 
-####Example
+#### Example
 ```
 python main.py -a multi_ppo -c ppo_conf -g pacman -d pacman_conf game_name=originalClassic num_adversaries=1 adv_load_model=True adv_load_model_path=source/pacman/original/0/model
 ```
@@ -51,7 +51,7 @@ win : [False, False, False, False],  step : 100,  discounted_reward : [ 0.612138
 win : [False, False, False, False],  step : 100,  discounted_reward : [ 0.58945708 -0.63762798 -0.63762798 -0.63762798],  discount_reward_mean : [ 0.60079775 -0.63762798 -0.63762798 -0.63762798],  undiscounted_reward : [ 0.31 -1.01 -1.01 -1.01],  reward_mean : [ 0.31 -1.01 -1.01 -1.01],  episode : 1,
 ```
 
-####Results
+#### Results
 
 All results will be stored in the `results/alg_name/game_type/game_name/time` folder, every folder contains `graph`, `log`, `model`, `output`, `args.json`, `command.txt`
 
@@ -63,17 +63,17 @@ If you do not want to save `graph` and `model`, setting param `save_model=False`
 * `args.json`: store all params.
 * `command.txt`: shell command.
 
-##Source Policy
+## Source Policy
 
 Source policies contain pre-trained opponent policies. For example, in pac-man, the pac-man agent is the opponent, the policy is a pre-trained PPO; in predator-prey, the blue circle agents are pre-trained using PPO. Using test mode via `-t`和`load_model`can reload the model to render
 
-##Configuration
+## Configuration
 
 The config files act as defaults for an algorithm or environment. 
 
 They are all located in `config`.
 
-####Operating parameters
+#### Operating parameters
 
 Take the above example: 
 * `-a multi_ppo`: choose an algorithm.
@@ -86,7 +86,7 @@ Take the above example:
 * `adv_load_model=True adv_load_model_path=source/pacman/original/0/model`: load source policy.
 * `adv_use_option, good_use_option`: use option, by setting `True`, `False` as default. Learning ppo, shppo and maddpg, setting `False`, otherwise setting `True` as needed.
 
-####Core parameters
+#### Core parameters
 
 Default:
 * `option_layer_1=128, option_layer_2=128`
@@ -100,7 +100,7 @@ Default:
 * `learning_rate_o=0.00001, learning_rate_t=0.00001`
 * `xi=0.005`
 
-####Some experiences setting in paper
+#### Some experiences setting in paper
 ```
 #ppo+sro, game type=pacman, game environment=mediumClassic
 c1=0.005
@@ -131,7 +131,7 @@ c1=0.1
 
 MADDPG code follows: https://github.com/openai/maddpg
 
-##In BibTeX format:
+## In BibTeX format:
 
 ```tex
 @article{yang2021efficient,
