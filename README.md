@@ -32,6 +32,7 @@
 
 ## Installation
 python==3.6.5
+
 pip install -r requirements.txt
 
 ## Running Example
@@ -48,6 +49,7 @@ win : [False, False, False, False],  step : 100,  discounted_reward : [ 0.589457
 ```
 
 ####Results
+
 All results will be stored in the `results/alg_name/game_type/game_name/time` folder, every folder contains `graph`, `log`, `model`, `output`, `args.json`, `command.txt`
 
 If you do not want to save `graph` and `model`, setting param `save_model=False`.
