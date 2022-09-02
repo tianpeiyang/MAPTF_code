@@ -41,8 +41,14 @@ pip install -r requirements.txt
 ## Running Example
 
 #### Example
+
 ```
+#MAPTF-PPO Pacman
 python main.py -a multi_ppo -c ppo_conf -g pacman -d pacman_conf game_name=originalClassic num_adversaries=1 adv_load_model=True adv_load_model_path=source/pacman/original/0/model
+```
+```
+#MAPTF-PPO Predator-prey 4
+python main.py -a multi_ppo -c ppo_conf -g particle -d particle_conf game_name=simple_tag num_adversaries=3 good_use_option=False good_load_model=True good_load_model_path=source/simple_tag/tag4/model_30000 c1=0.001
 ```
 some logs will be shown below:
 ```
